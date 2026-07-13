@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://maizel-bio.ru/sitemap.xml
