@@ -1,0 +1,4 @@
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+{{ if .Site.Params.customCSS }}
+  <link rel="stylesheet" href="{{ .Site.Params.customCSS | relURL }}">
+{{ end }}

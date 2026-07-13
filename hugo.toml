@@ -1,0 +1,62 @@
+baseURL = "https://maizel-bio.ru/"
+title = "Майзель Сергей — биология молока, исследования"
+relativeURLs = false
+theme = "PaperMod"
+defaultContentLanguage = "ru"
+
+enableRobotsTXT = true
+metaDataFormat = "yaml"
+summaryLength = 30
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  title = "Майзель Сергей — биология молока"
+  description = "Научно-популярные статьи о биологии молока, его составе, пользе и мифах. Исследования Майзеля."
+  
+  defaultTheme = "light"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowShareButtons = true
+  ShowCodeCopyButtons = true
+
+  homeInfoParams = { Title = "Майзель Сергей", Content = "Биология молока, исследования, факты." }
+  customCSS = "/custom.css"
+
+  author = "Сергей Майзель"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "Об авторе"
+    url = "/about/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "blog"
+    name = "Исследования"
+    url = "/blog/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Контакты"
+    url = "/contact/"
+    weight = 30
+
+[languages]
+  [languages.ru]
+    languageCode = "ru-ru"
+    languageName = "Русский"
+    weight = 1
+    title = "Майзель — биология молока"
